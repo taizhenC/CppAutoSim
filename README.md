@@ -36,3 +36,31 @@ Download and install the EasyX library from the EasyX official website.
 Configure your project’s include and library directories to reference EasyX.
 Build the Project:
 Build the solution within Visual Studio.
+
+Usage
+Run the Simulation:
+Execute the built application. The simulation will launch with a pre-configured scenario.
+Select/Modify Scenarios:
+The active scenario is set in main.cpp by passing a value from the PlanType enum (e.g., ObsPassMeetingType). Modify this parameter to test different scenarios such as:
+StraightStopObsType
+StraightStationType
+StraightFollowType
+StraightCrosswalkType
+ObsPassStaticType
+ObsPassOvertakeType
+ObsPassMeetingType
+Project Structure
+main.cpp & main.h:
+Entry point and definition of the simulation scenarios.
+planning_base.h & planning_base.cpp:
+Contains core functions for vehicle motion and planning.
+traffic.h & traffic.cpp:
+Defines obstacles (e.g., cones) and pedestrian behavior.
+road.h & road.cpp:
+Implements various road types and their display functions.
+scene_base.h & scene_base.cpp:
+Provides a base class for simulation scenes, including motion primitives such as lane changing and turning.
+scene_straight.h & scene_straight.cpp:
+Implements straight driving scenarios (obstacle stop, parking, following, and crosswalk).
+scene_obs_pass.h & scene_obs_pass.cpp:
+Implements obstacle avoidance scenarios (static obstacle, overtaking, and meeting oncoming traffic).
