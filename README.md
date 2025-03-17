@@ -28,7 +28,7 @@ Windows.
 Clone the Repository:
 bash
 Copy
-git clone https://github.com/yourusername/CppAutoSim.git
+git clone https://github.com/taizhenC/CppAutoSim.git
 Open the Project:
 Open the solution file in Visual Studio 2022.
 Install EasyX:
